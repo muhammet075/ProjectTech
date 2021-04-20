@@ -7,7 +7,7 @@ app.get("/", home);
 app.get("/about", about);
 
 function home(req, res){
-    res.send("Welddkom");
+    res.send("Welkom");
 }
 
 function about(req, res){
