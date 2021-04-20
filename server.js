@@ -9,7 +9,7 @@ app.get("/", home);
 app.get("/about", about);
 
 function home(req, res){
-    res.send("Welkom");
+    res.send("Welddkom");
 }
 
 function about(req, res){
