@@ -1,13 +1,18 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = 3000;
 
 
 app.get("/", home);
 app.get("/about", about);
 
+
+app.use(express.static('static'));
+app.set("view engine", "ejs");
+
+
 function home(req, res){
-    res.send("Welkom");
+    res.render("index", {data: autos});
 }
 
 function about(req, res){
@@ -18,3 +23,10 @@ function about(req, res){
 app.listen(port, () => {
     console.log("Server is aan");
 }) 
+
+
+
+const autos = {
+    merk: "Mercedes-Benz",
+    kleur: "Zwart"
+}
