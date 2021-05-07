@@ -6,6 +6,22 @@
 :root{
     --wit: #ffff;
     --zwart: #000;
+    --grijs: #333333;
+    --lichtgrijs: #d3d3d3;
+    --geel: #fdae37;
+}
+
+a{
+    color: var(--geel);
+}
+
+h1{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: var(--wit);
+    font-style: italic;
 }
 
 body{
@@ -15,7 +31,7 @@ body{
 #app{
     max-width: 600px;
     margin: auto;
-    background-color: #fe3c72;
+    background-color: var(--grijs);
 }
 
 header a{
@@ -34,13 +50,14 @@ header a{
 }
 
 .home img{
-    width: 70%;
+    width: 50%;
 }
 
 .home h1{
-    color: var(--wit);
-    font-size: 3.5em;
-    margin-bottom: 100px;
+    color: var(--geel);
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 70px;
 }
 
 .home section{
@@ -65,77 +82,104 @@ header a{
     width: 70%;
     color: var(--wit);
     font-size: 0.8em;
-    margin-top: 130px;
-    margin-bottom: 20px;
+    margin-top: 100px;
 }
 /* EINDE HOME */
 
 
+/* BEGIN HEADER */
+header img{
+    height: 40px;
+    width: auto;
+    padding: 3px;
+    margin-top: 10px;
+}
+/* EINDE HEADER */
+
+
+/* BEGIN FOOTER */
+footer{
+    display: flex;
+    border-top: 1px solid var(--geel);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer section a{
+    font-size: 2em;
+    color: var(--geel);
+}
+/* EINDE FOOTER */
+
+
 /* BEGIN REGISTREREN */
 
-.registeren h1{
-    text-align: center;
-    color: var(--wit);
-    margin-bottom: 40px;
+#gameform div{
+    display: flex;
 }
 
-.registeren form{
-    width: 90%;
-}
-
-.registeren form fieldset{
-    margin-bottom: 30px;
-    border: 1px solid var(--wit);
-}
-
-.registeren form fieldset legend{
-    font-size: 1.3em;
-    color: var(--wit);
-}
-
-.registeren form fieldset section div{
+#gameform div section{
     display: grid;
-    margin: 10px 0px;
+    width: 40%;
 }
 
-.registeren form fieldset label{
-    margin-bottom: 5px;
+#gameform div section label{   
+    font-family: Ubuntu;
+    color: var(--geel);
+    font-weight: 900;
+    margin-bottom: 2px;
 }
 
-.registeren form fieldset input, .registeren form fieldset textarea{
-    padding: 10px;
-    width: 300px;
-    border-radius: 10px;
+#gameform div section input, #gameform div section select{   
+    width: 100%;
+    padding: 8px 2px;
+    border-radius: 8px;
     border: 0px;
-    margin-bottom: 20px;
-}
-
-.registeren form fieldset textarea{
-    width: 95%;
-}
-
-.registeren form fieldset:first-child div:last-child{
-    display: block;
-    margin: auto;
-    width: 65%;
-}
-
-.registeren form fieldset:first-child div:last-child label{
-    margin-right: 20px;
-}
-
-
-.registeren form fieldset:first-child div:last-child input{
-    width: auto;
-}
-
-.registrerenknop{
-    display: block;
-    font-size: 1.2em;
+    margin-bottom: 30px;
     background-color: var(--wit);
+}
+
+#console{
+    margin-bottom: 75px !important;
+}
+
+#gameform input[type=submit]{
+    margin: auto;
+    display: flex;
+    padding: 10px 90px;
+    border-radius: 25px;
     border: 0px;
-    padding: 10px 60px;
-    border-radius: 15px;
+    margin-top: 50px;
+    background-color: var(--geel);
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 /* EINDE REGISTREREN */
+
+
+#card{
+    background-color: var(--wit);
+    width: 70%;
+    border-radius: 10px;
+}
+
+#card section{
+    text-align: center;
+    margin: 20px 0px;
+} 
+
+#card section:last-child{
+    display: flex;
+    padding: 20px 5px;
+}
+
+#filter{
+    color: var(--geel);
+    font-size: 1.5em;
+    float: right;
+    margin-top: -60px;
+    margin-right: 20px;
+    cursor: pointer;
+}

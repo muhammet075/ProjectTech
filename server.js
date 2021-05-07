@@ -18,12 +18,12 @@ app.get('', (req, res) => {
     res.render('index')
 })
 
-app.get('/login', (req, res) => {
-    res.render('login')
+app.get('/aanmelden', (req, res) => {
+    res.render('aanmelden')
 })
 
-app.get('/register', (req, res) => {
-    res.render('register')
+app.get('/zoeken', (req, res) => {
+    res.render('zoeken')
 })
 
 app.listen(port, () => {
