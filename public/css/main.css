@@ -1,0 +1,141 @@
+*{
+    margin: 0 auto;
+    font-family: Roboto;
+}
+
+:root{
+    --wit: #ffff;
+    --zwart: #000;
+}
+
+body{
+    background-color: #dcdcdc;
+}
+
+#app{
+    max-width: 600px;
+    margin: auto;
+    background-color: #fe3c72;
+}
+
+header a{
+    padding: 10px;
+    font-size: 1.3em;
+    color: var(--wit);
+    text-decoration: none;
+}
+
+
+/* BEGIN HOME */
+.home{
+    display: grid;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home img{
+    width: 70%;
+}
+
+.home h1{
+    color: var(--wit);
+    font-size: 3.5em;
+    margin-bottom: 100px;
+}
+
+.home section{
+    display: grid;
+}
+
+.home section a{
+    background-color: var(--wit);
+    color: var(--zwart);
+    padding: 10px;
+    padding-left: 30px;
+    width: 280px;
+    border-radius: 25px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: initial;
+}
+
+.home p{
+    width: 70%;
+    color: var(--wit);
+    font-size: 0.8em;
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+/* EINDE HOME */
+
+
+/* BEGIN REGISTREREN */
+
+.registeren h1{
+    text-align: center;
+    color: var(--wit);
+    margin-bottom: 40px;
+}
+
+.registeren form{
+    width: 90%;
+}
+
+.registeren form fieldset{
+    margin-bottom: 30px;
+    border: 1px solid var(--wit);
+}
+
+.registeren form fieldset legend{
+    font-size: 1.3em;
+    color: var(--wit);
+}
+
+.registeren form fieldset section div{
+    display: grid;
+    margin: 10px 0px;
+}
+
+.registeren form fieldset label{
+    margin-bottom: 5px;
+}
+
+.registeren form fieldset input, .registeren form fieldset textarea{
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+.registeren form fieldset textarea{
+    width: 95%;
+}
+
+.registeren form fieldset:first-child div:last-child{
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+
+.registeren form fieldset:first-child div:last-child label{
+    margin-right: 20px;
+}
+
+
+.registeren form fieldset:first-child div:last-child input{
+    width: auto;
+}
+
+.registrerenknop{
+    display: block;
+    font-size: 1.2em;
+    background-color: var(--wit);
+    border: 0px;
+    padding: 10px 60px;
+    border-radius: 15px;
+}
+
+/* EINDE REGISTREREN */
