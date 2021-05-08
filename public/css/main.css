@@ -51,6 +51,8 @@ header a{
 
 .home img{
     width: 50%;
+    height: auto;
+    margin-top: 50px;
 }
 
 .home h1{
