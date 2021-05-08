@@ -1,3 +1,4 @@
+
 # Game Buddy 
 
 Game Buddy is een app waarbij mensen die de zelfde games spelen met elkaar in contact kunnen komen. De gebruiker meldt zich aan via een formulier en vult zijn gegevens in. De gebruiker vult 4 games in die hij/zij speelt. Daarna komen de gegevens van de gebruiker in de dashboard van de app, waarbij andere mensen dat kunnen zien.
