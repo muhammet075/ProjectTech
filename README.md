@@ -1,3 +1,4 @@
+![logo](https://user-images.githubusercontent.com/34505894/117519819-99384b00-afa5-11eb-975a-19932dbe1c1b.png)
 
 # Game Buddy 
 
