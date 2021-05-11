@@ -48,8 +48,8 @@ const gebruikerSchema = new mongoose.Schema({
       type: String,
     },
     game4: {
-        type: String,
-      }
+      type: String,
+    }
   });
 
 const gebruiker = mongoose.model("gebruiker", gebruikerSchema)
@@ -70,8 +70,8 @@ app.post('/aanmelden', async (req, res) => {
         console: req.body.console,
         game1: req.body.game1,
         game2: req.body.game2,
-        game3: req.body.naam3,
-        game4: req.body.naam4
+        game3: req.body.game3,
+        game4: req.body.game4
     });
     nieuwGebruiker.save();
     res.redirect('/zoeken');
