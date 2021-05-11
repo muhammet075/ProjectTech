@@ -167,13 +167,16 @@ footer section a{
     border-radius: 10px;
 }
 
+#card h2{
+    padding: 10px;
+}
+
 #card section{
     text-align: center;
     margin: 20px 0px;
 } 
 
 #card section:last-child{
-    display: flex;
     padding: 20px 5px;
 }
 
