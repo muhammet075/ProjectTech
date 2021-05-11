@@ -1,49 +1,58 @@
+require('dotenv').config();
+
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 
-const bodyParser = require('body-parser');
-
 const app = express();
 const port = 3000;
-
-const mongo = require('./mongo');
-const gerbuikerSchema = require('./schemas/gerbuiker-schema');
-
-const connectToMongo = async () => {
-    await mongo().then(async (mongoose) =>{
-        try {
-            console.log("test");
-
-            const gebruiker = {
-                naam: "muhammet",
-                email: "muhammet075@icloud.com",
-                telefoon: "061234567",
-                console: "PS5",
-                game1: "he1",
-                game2: "he2",
-                game3: "he3",
-                game4: "he4"
-            }
-
-            await new gerbuikerSchema(gebruiker).save()
-
-        } finally {
-            mongoose.connection.close();
-        }
-    })
-}
-
-connectToMongo();
-
 
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public.css'));
 app.use('/img', express.static(__dirname + 'public.img'));
 
-
 app.use(expressLayouts);
 app.set('layout', './layouts/full-width')
 app.set("view engine", "ejs");
+
+var bodyParser = require('body-parser');
+app.use(express.json());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+
+const mongoose = require('mongoose');
+ mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
+const gebruikerSchema = new mongoose.Schema({
+    naam: {
+      type: String,
+    },
+    email: {
+      type: String,
+    },
+    telefoon: {
+      type: Number,
+    },
+    console: {
+      type: String,
+    },
+    game1: {
+      type: String,
+    },
+    game2: {
+      type: String,
+    },
+    game3: {
+      type: String,
+    },
+    game4: {
+        type: String,
+      }
+  });
+
+const gebruiker = mongoose.model("gebruiker", gebruikerSchema)
 
 app.get('', (req, res) => {
     res.render('index')
@@ -53,11 +62,32 @@ app.get('/aanmelden', (req, res) => {
     res.render('aanmelden')
 })
 
-app.get('/zoeken', (req, res) => {
-    res.render('zoeken')
+app.post('/aanmelden', async (req, res) => {
+    let nieuwGebruiker = new gebruiker({
+        naam: req.body.naam,
+        email: req.body.email,
+        telefoon: req.body.telefoon,
+        console: req.body.console,
+        game1: req.body.game1,
+        game2: req.body.game2,
+        game3: req.body.naam3,
+        game4: req.body.naam4
+    });
+    nieuwGebruiker.save();
+    res.redirect('/zoeken');
 })
+
+app.get('/zoeken', (req, res) => {
+  gebruiker.find({}, function(err, gebruikers) {
+      res.render('zoeken', {
+          gebruikersLijst: gebruikers
+      })
+  })
+})
+
+
+
 
 app.listen(port, () => {
     console.log("Server is aan");
 }) 
-

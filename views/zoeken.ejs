@@ -1,29 +1,36 @@
 <span id="filter"><i class="fas fa-filter"></i> Filter</span>
 
-<div id="card">
+
+
+ 
+
+
+    <%gebruikersLijst.forEach(gebruiker => {%>
+        <div id="card">
+
 
 <section>
-    <h2>Naam</h2> 
-    <p>(21)</p>
+    <h2><%= gebruiker.naam %></h2> 
 </section>
 
 <section>
     <h3>Speelt op:</h3>
-    <p>PlayStation 4</p>
+    <p><%= gebruiker.console %></p>
     </span>
 </section>
 
 <section>
     <h3>Contact</h3>
-    <p>06-123456</p> 
-    <p>mail@voorbeeld.nl</p>
+    <p><%= gebruiker.telefoon %></p>
+    <p><%= gebruiker.mail %></p>
 </section>
 
 <section>
-    <p>game1</p> 
-    <p>game2</p>
-    <p>game3</p> 
-    <p>game4</p>
+    <p><%= gebruiker.game1 %></p>
+    <p><%= gebruiker.game2 %></p>
+    <p><%= gebruiker.game3 %></p>
+    <p><%= gebruiker.game4 %></p>
 </section>
-
 </div>
+<%})%>
+

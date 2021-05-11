@@ -1,7 +1,7 @@
 <h1>Meld je aan</h1>
 
     
-    <form id="gameform">
+    <form method="POST" action="/aanmelden" id="gameform">
 
         <div>
         <section>
@@ -12,15 +12,15 @@
 
         <div>
         <section>
-            <label for="mail">Wat is je E-Mail</label>
-            <input type="mail" id="mail" name="mail">
+            <label for="email">Wat is je E-Mail</label>
+            <input type="email" id="email" name="email">
         </section>
         </div>
 
         <div>
         <section>
             <label for="phone">Wat is je telefoonnummer</label>
-            <input type="phone" id="nummer" name="nummer">
+            <input type="phone" id="telefoon" name="telefoon">
         </section>
         </div>
 
@@ -89,6 +89,5 @@
         </section>
         </div>
 
-        <input type="submit" value="Aanmelden">
+        <input type="submit" value="Aanmelden" id="aanmeldKnop">
       </form>
-
