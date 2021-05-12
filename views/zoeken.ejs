@@ -1,11 +1,14 @@
+<div id="zoeken-menu">
+<span id="instellingen"><a href="/wijzigen"><i class="fas fa-cog"></i></a></span>
 <span id="filter"><i class="fas fa-filter"></i> Filter</span>
-
+</div>
 
 
  
 
 
     <%gebruikersLijst.forEach(gebruiker => {%>
+
         <div id="card">
 
 <section>
@@ -24,7 +27,7 @@
 
 <section>
     <h3>Contact</h3>
-    <p><%= gebruiker.telefoon %></p>
+    <p>0<%= gebruiker.telefoon %></p>
     <p><%= gebruiker.mail %></p>
 </section>
 
@@ -37,3 +40,27 @@
 </div>
 <%})%>
 
+<div id="filteren">
+
+<span id="filterensluiten"><i class="fas fa-times-circle"></i></span>
+
+<div>
+
+    <h1>Filteren</h1>
+
+<form method="POST" action="/zoeken" id="gameform">
+
+            <label for="consolefilter">Console</label>
+            <select name="consolefilter" id="consolefilter">
+                <option value="Alle">Alle</option>
+                <option value="PC">PC</option>
+                <option value="PlayStation 4">PlayStation 4</option>
+                <option value="PlayStation 5">PlayStation 5</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="Xbox Series X">Xbox Series X</option>
+              </select>
+  
+    <input type="submit" value="Filteren">
+  </form>
+</div>
+</div>
