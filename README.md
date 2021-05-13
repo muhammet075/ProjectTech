@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/34505894/117519819-99384b00-afa5-11eb-975a-19932dbe1c1b.png" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/34505894/117519819-99384b00-afa5-11eb-975a-19932dbe1c1b.png" height="200" />
 
 
 # Game Buddy 🎮
