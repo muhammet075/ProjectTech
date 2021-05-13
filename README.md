@@ -1,5 +1,4 @@
-![logo](https://user-images.githubusercontent.com/34505894/117519819-99384b00-afa5-11eb-975a-19932dbe1c1b.png | width=100)
-<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/34505894/117519819-99384b00-afa5-11eb-975a-19932dbe1c1b.png" width="200" height="400" />
 
 
 # Game Buddy 🎮
