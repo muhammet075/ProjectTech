@@ -6,7 +6,7 @@
 :root{
     --wit: #ffff;
     --zwart: #000;
-    --grijs: #333333;
+    --grijs: #232323;
     --lichtgrijs: #d3d3d3;
     --geel: #fdae37;
 }
@@ -18,19 +18,17 @@ a{
 h1{
     font-size: 1.8em;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-top: 50px;
     color: var(--wit);
-    font-style: italic;
 }
 
 h2{
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 10px;
     color: var(--wit);
-    font-style: italic;
 }
 
 body{
@@ -68,7 +66,12 @@ header a{
     color: var(--geel);
     font-size: 1.8em;
     margin-top: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
+}
+
+#uitleglink{
+    margin-bottom: 80px;
+    font-size: 1.2em;
 }
 
 .home section{
@@ -136,18 +139,23 @@ footer section a{
 
 #gameform div section label{   
     font-family: Ubuntu;
-    color: var(--geel);
-    font-weight: 900;
+    color: var(--wit);
+    font-weight: 100;
     margin-bottom: 2px;
 }
 
-#gameform div section input, #gameform div section select{   
+#gameform div section input, #gameform div section select, #filteren select{   
     width: 100%;
     padding: 8px 2px;
-    border-radius: 8px;
     border: 0px;
-    margin-bottom: 30px;
-    background-color: var(--wit);
+    margin-bottom: 60px;
+    background-color: var(--grijs);
+    border-bottom: 1px solid var(--geel);
+    color: var(--wit);
+}
+
+#filteren select{
+    width: 50%;
 }
 
 #console{
@@ -174,11 +182,13 @@ footer section a{
     background-color: var(--wit);
     width: 70%;
     border-radius: 10px;
+    margin-top: 70px;
 }
 
 #card h2{
-    padding: 0px 10px;
     color: var(--zwart);
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 #card img{
@@ -202,13 +212,17 @@ footer section a{
     color: var(--geel);
     font-size: 1.5em;
     float: right;
-    margin-top: -60px;
+    margin-top: -110px;
     margin-right: 20px;
     cursor: pointer;
 }
 
 #zoeken-menu span:first-child{
     margin-right: 20px;
+}
+
+#zoeken-menu span:nth-child(2){
+    margin-right: 15px;
 }
 
 #terug{
@@ -246,12 +260,12 @@ footer section a{
 
 #filteren label{
     display: block;
-    color: var(--geel);
+    color: var(--wit);
+    margin-top: 100px;
 }
 
-#filteren select{
-    padding: 7px 80px 7px 10px;
-    border-radius: 10px;
+#verwijderknop{
+    margin-bottom: 350px !important;
 }
 
 .notfound{
@@ -267,4 +281,40 @@ footer section a{
 .notfound h2{
     font-size: 2em;
     margin-bottom: 310px;
+}
+
+.hoewerkhet p{
+    margin: 0 auto;
+}
+
+.hoewerkhet h1{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.hoewerkhet h2{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.hoewerkhet a{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: var(--geel);
+    color: var(--zwart);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.hometerug{
+    color: var(--geel);
+    font-size: 1.5em;
+    float: right;
+    margin-top: -110px;
+    margin-right: 10px;
+    cursor: pointer;
 }

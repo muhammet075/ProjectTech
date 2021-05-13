@@ -1,66 +1,58 @@
 <div id="zoeken-menu">
-<span id="instellingen"><a href="/wijzigen"><i class="fas fa-cog"></i></a></span>
-<span id="filter"><i class="fas fa-filter"></i> Filter</span>
+    <span id="verwijderen"><a href="/verwijderen"><i class="fas fa-trash"></i></a></span>
+    <span id="instellingen"><a href="/wijzigen"><i class="fas fa-cog"></i></a></span>
+    <span id="filter"><i class="fas fa-filter"></i> Filter</span>
 </div>
 
+<%gebruikersLijst.forEach(gebruiker => {%>
+<div id="card" data-aos="fade-up">
 
- 
+    <section>
+        <img src="img/lege-avatar.svg" alt="Geen gekozen profielfoto"/>
+    </section>
 
+    <section>
+        <h2><%= gebruiker.naam %></h2> 
+    </section>
 
-    <%gebruikersLijst.forEach(gebruiker => {%>
+    <section>
+        <h3>Speelt op:</h3>
+        <p><%= gebruiker.console %></p>
+    </section>
 
-        <div id="card">
+    <section>
+        <h3>Contact</h3>
+        <p>0<%= gebruiker.telefoon %></p>
+        <p><%= gebruiker.mail %></p>
+    </section>
 
-<section>
-    <img src="img/lege-avatar.svg" alt="Geen gekozen profielfoto"/>
-</section>
+    <section>
+        <p><%= gebruiker.game1 %></p>
+        <p><%= gebruiker.game2 %></p>
+        <p><%= gebruiker.game3 %></p>
+        <p><%= gebruiker.game4 %></p>
+    </section>
 
-<section>
-    <h2><%= gebruiker.naam %></h2> 
-</section>
-
-<section>
-    <h3>Speelt op:</h3>
-    <p><%= gebruiker.console %></p>
-    </span>
-</section>
-
-<section>
-    <h3>Contact</h3>
-    <p>0<%= gebruiker.telefoon %></p>
-    <p><%= gebruiker.mail %></p>
-</section>
-
-<section>
-    <p><%= gebruiker.game1 %></p>
-    <p><%= gebruiker.game2 %></p>
-    <p><%= gebruiker.game3 %></p>
-    <p><%= gebruiker.game4 %></p>
-</section>
 </div>
 <%})%>
 
 <div id="filteren">
+    <span id="filterensluiten"><i class="fas fa-times-circle"></i></span>
 
-<span id="filterensluiten"><i class="fas fa-times-circle"></i></span>
-
-<div>
-
-    <h1>Filteren</h1>
-
-<form method="POST" action="/zoeken" id="gameform">
-
+    <div>
+        <h1>Filteren</h1>
+        <form method="POST" action="/zoeken" id="gameform">
             <label for="consolefilter">Console</label>
-            <select name="consolefilter" id="consolefilter">
-                <option value="Alle">Alle</option>
-                <option value="PC">PC</option>
-                <option value="PlayStation 4">PlayStation 4</option>
-                <option value="PlayStation 5">PlayStation 5</option>
-                <option value="Xbox One">Xbox One</option>
-                <option value="Xbox Series X">Xbox Series X</option>
-              </select>
-  
-    <input type="submit" value="Filteren">
-  </form>
-</div>
+                <select name="consolefilter" id="consolefilter">
+                    <option value="Alle">Alle</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation 4">PlayStation 4</option>
+                    <option value="PlayStation 5">PlayStation 5</option>
+                    <option value="Xbox One">Xbox One</option>
+                    <option value="Xbox Series X">Xbox Series X</option>
+                </select>
+            <input type="submit" value="Filteren">
+        </form>
+    </div>
+    
 </div>
