@@ -180,18 +180,34 @@ footer section a{
 
 #card{
     background-color: var(--wit);
-    width: 70%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 5px;
     margin-top: 70px;
+    box-shadow: 5px 10px 18px #777;
 }
 
-#card h2{
-    color: var(--zwart);
+#card section:nth-child(2){
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid #e0e0e0;
 }
 
-#card img{
+#card section:nth-child(2) h2, #card section:nth-child(2) p{
+    color: var(--zwart);
+    margin: 0px;
+}
+
+#card section:nth-child(2) p{
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+
+#card section:nth-child(2) span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarimg{
     width: 100px;
     height: auto;
     border: 1px solid black;
@@ -199,14 +215,34 @@ footer section a{
     margin-top: 20px;
 }
 
+.consoleimg{
+    width: 200px;
+    height: auto;
+}
+
 #card section{
     text-align: center;
     margin: 20px 0px;
 } 
 
-#card section:last-child{
-    padding: 20px 5px;
+#card section:nth-child(4){
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 50px;
 }
+
+#card section:last-child span{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px 5px 10px 5px;
+}
+
+#card section:last-child span img{   
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+}
+
 
 #zoeken-menu{
     color: var(--geel);

@@ -30,6 +30,9 @@ const gebruikerSchema = new mongoose.Schema({
     naam: {
       type: String,
     },
+    leeftijd: {
+      type: Number,
+    },
     email: {
       type: String,
       unique: true,
@@ -58,7 +61,6 @@ const gebruiker = mongoose.model("gebruiker", gebruikerSchema)
 
 
 
-
 app.get('', (req, res) => {
     res.render('index')
 })
@@ -73,6 +75,7 @@ app.get('/aanmelden', (req, res) => {
 app.post('/aanmelden', async (req, res) => {
     let nieuwGebruiker = new gebruiker({
         naam: req.body.naam,
+        leeftijd: req.body.leeftijd,
         email: req.body.email,
         telefoon: req.body.telefoon,
         console: req.body.console,
@@ -128,6 +131,7 @@ app.post('/wijzigen', async (req, res) => {
     const doc = await gebruiker.findOne({ email: req.body.wijzigemail });
       doc.overwrite({     
         naam: req.body.wijzignaam,
+        leeftijd: req.body.wijzigleeftijd,
         email: req.body.wijzigemail,
         telefoon: req.body.wijzigtelefoon,
         console: req.body.wijzigconsole,

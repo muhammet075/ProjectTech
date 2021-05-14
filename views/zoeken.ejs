@@ -8,16 +8,16 @@
 <div id="card" data-aos="fade-up">
 
     <section>
-        <img src="img/lege-avatar.svg" alt="Geen gekozen profielfoto"/>
+        <img src="img/lege-avatar.svg" alt="Geen gekozen profielfoto" class="avatarimg"/>
+    </section>
+    
+    <section>
+        <span><h2><%= gebruiker.naam %></h2> <p>(<%= gebruiker.leeftijd %>)</p></span>
     </section>
 
     <section>
-        <h2><%= gebruiker.naam %></h2> 
-    </section>
-
-    <section>
-        <h3>Speelt op:</h3>
-        <p><%= gebruiker.console %></p>
+        <h3>Speelt op</h3>
+        <img src="img/console/<%= gebruiker.console %>.svg" alt="Logo van de console" class="consoleimg"/>
     </section>
 
     <section>
@@ -27,10 +27,13 @@
     </section>
 
     <section>
-        <p><%= gebruiker.game1 %></p>
-        <p><%= gebruiker.game2 %></p>
-        <p><%= gebruiker.game3 %></p>
-        <p><%= gebruiker.game4 %></p>
+        <h3>Games</h3>
+        <span>
+            <img src="img/game/<%= gebruiker.game1 %>.svg" alt="Logo van de game" class="gameimg"/>
+            <img src="img/game/<%= gebruiker.game2 %>.svg" alt="Logo van de game" class="gameimg"/>
+            <img src="img/game/<%= gebruiker.game3 %>.svg" alt="Logo van de game" class="gameimg"/>
+            <img src="img/game/<%= gebruiker.game4 %>.svg" alt="Logo van de game" class="gameimg"/>
+        </span>
     </section>
 
 </div>

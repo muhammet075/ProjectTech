@@ -1,4 +1,4 @@
-console.log("Helloww");
+console.log("Hellowwd");
 
 //AOS
 AOS.init({
@@ -26,4 +26,3 @@ function openFilter(){
 function sluitFilter(){
     filterForm.style.display = "none";
 };
-
