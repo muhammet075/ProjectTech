@@ -45,6 +45,9 @@ const gebruikerSchema = new mongoose.Schema({
     console: {
       type: String,
     },
+    bio: {
+      type: String,
+    },
     game1: {
       type: String,
     },
@@ -77,6 +80,17 @@ const storage = multer.diskStorage({
 
 });
 
+const storageWijzig = multer.diskStorage({
+  destination: function (request, file, callback){
+    callback(null, './public/uploads');
+  },
+
+  filename: function (request, file, callback){
+    callback(null, Date.now() + file.originalname);
+  },
+
+});
+
 
 const upload = multer({
   storage: storage,
@@ -85,6 +99,12 @@ const upload = multer({
   },
 });
 
+const uploadWijzig = multer({
+  storage: storageWijzig,
+  limits: {
+    fieldSize: 1024 * 1024 * 3,
+  },
+});
 
 
 
@@ -107,6 +127,7 @@ app.post('/aanmelden', upload.single('image'), async (req, res) => {
         email: req.body.email,
         telefoon: req.body.telefoon,
         console: req.body.console,
+        bio: req.body.bio,
         game1: req.body.game1,
         game2: req.body.game2,
         game3: req.body.game3,
@@ -155,19 +176,22 @@ app.get('/wijzigen', (req, res) => {
   res.render('wijzigen')
 })
 
-app.post('/wijzigen', async (req, res) => {
+
+app.post('/wijzigen', uploadWijzig.single('wijzigimage'), async (req, res) => {
   try {
     const doc = await gebruiker.findOne({ email: req.body.wijzigemail });
-      doc.replaceOne({     
+      doc.overwrite({     
         naam: req.body.wijzignaam,
         leeftijd: req.body.wijzigleeftijd,
         email: req.body.wijzigemail,
         telefoon: req.body.wijzigtelefoon,
         console: req.body.wijzigconsole,
+        bio: req.body.wijzigbio,
         game1: req.body.wijziggame1,
         game2: req.body.wijziggame2,
         game3: req.body.wijziggame3,
         game4: req.body.wijziggame4,
+        img: req.file.filename
       });
 
     await doc.save();

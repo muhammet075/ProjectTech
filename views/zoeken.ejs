@@ -5,36 +5,51 @@
 </div>
 
 <%gebruikersLijst.forEach(gebruiker => {%>
-<div id="card" data-aos="fade-up">
+<div class="card" data-aos="fade-up">
+    <div>
+        <section>
+            <span><h2><%= gebruiker.naam %></h2> <p>(<%= gebruiker.leeftijd %>)</p></span>
+        </section>
 
-    <section>
-        <img src="/uploads/<%= gebruiker.img %>" alt="Geen gekozen profielfoto" class="avatarimg"/>
-    </section>
-    
-    <section>
-        <span><h2><%= gebruiker.naam %></h2> <p>(<%= gebruiker.leeftijd %>)</p></span>
-    </section>
+        <section>
+            <img src="/uploads/<%= gebruiker.img %>" alt="Geen gekozen profielfoto" class="avatarimg"/>
+        </section>
 
-    <section>
-        <h3>Mijn console</h3>
-        <img src="img/console/<%= gebruiker.console %>.svg" alt="Logo van de console" class="consoleimg"/>
-    </section>
+        <section>
+            <p><%= gebruiker.bio %></p>
+        </section>
 
-    <section>
-        <div><span><i class="fab fa-whatsapp-square"></i></span> 0<%= gebruiker.telefoon %></div>
-    </section>
+    </div>
 
-    <section>
-        <h3>Games wat ik speel</h3>
-        <span>
+
+    <div>
+        <section>
+            <img src="img/console/<%= gebruiker.console %>.svg" alt="Logo van de console" class="consoleimg"/>
+        </section>
+
+        <section>
+            <span><i class="fab fa-whatsapp-square"></i> <a href="https://wa.me/31<%= gebruiker.telefoon %>">0<%= gebruiker.telefoon %></a></span>
+        </section>
+
+        <section>
             <img src="img/game/<%= gebruiker.game1 %>.svg" alt="Logo van de game" class="gameimg"/>
             <img src="img/game/<%= gebruiker.game2 %>.svg" alt="Logo van de game" class="gameimg"/>
             <img src="img/game/<%= gebruiker.game3 %>.svg" alt="Logo van de game" class="gameimg"/>
             <img src="img/game/<%= gebruiker.game4 %>.svg" alt="Logo van de game" class="gameimg"/>
-        </span>
-    </section>
+        </section>
 
-</div>
+    </div>
+
+    </div>
+
+    
+
+
+
+  
+
+          
+
 <%})%>
 
 <div id="filteren">
