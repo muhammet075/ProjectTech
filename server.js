@@ -15,11 +15,13 @@ app.set('layout', './layouts/full-width')
 app.set("view engine", "ejs");
 
 var bodyParser = require('body-parser');
+var multer = require('multer');
 app.use(express.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose');
+const { request } = require('express');
   mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -54,10 +56,35 @@ const gebruikerSchema = new mongoose.Schema({
     },
     game4: {
       type: String,
+    },
+    img: {
+      
     }
 });
 
 const gebruiker = mongoose.model("gebruiker", gebruikerSchema)
+
+
+
+const storage = multer.diskStorage({
+  destination: function (request, file, callback){
+    callback(null, './public/uploads');
+  },
+
+  filename: function (request, file, callback){
+    callback(null, Date.now() + file.originalname);
+  },
+
+});
+
+
+const upload = multer({
+  storage: storage,
+  limits: {
+    fieldSize: 1024 * 1024 * 3,
+  },
+});
+
 
 
 
@@ -72,7 +99,8 @@ app.get('/aanmelden', (req, res) => {
     res.render('aanmelden')
 })
 
-app.post('/aanmelden', async (req, res) => {
+app.post('/aanmelden', upload.single('image'), async (req, res) => {
+  console.log(request.file)
     let nieuwGebruiker = new gebruiker({
         naam: req.body.naam,
         leeftijd: req.body.leeftijd,
@@ -82,7 +110,8 @@ app.post('/aanmelden', async (req, res) => {
         game1: req.body.game1,
         game2: req.body.game2,
         game3: req.body.game3,
-        game4: req.body.game4
+        game4: req.body.game4,
+        img: req.file.filename
     });
    
     nieuwGebruiker.save(function (err) {
@@ -129,7 +158,7 @@ app.get('/wijzigen', (req, res) => {
 app.post('/wijzigen', async (req, res) => {
   try {
     const doc = await gebruiker.findOne({ email: req.body.wijzigemail });
-      doc.overwrite({     
+      doc.replaceOne({     
         naam: req.body.wijzignaam,
         leeftijd: req.body.wijzigleeftijd,
         email: req.body.wijzigemail,
@@ -138,14 +167,14 @@ app.post('/wijzigen', async (req, res) => {
         game1: req.body.wijziggame1,
         game2: req.body.wijziggame2,
         game3: req.body.wijziggame3,
-        game4: req.body.wijziggame4 
+        game4: req.body.wijziggame4,
       });
 
     await doc.save();
     res.redirect('/zoeken');
 
   } catch(err) {
-  console.log("Fout");
+  console.log(err);
   res.redirect('/error');
   }
 })

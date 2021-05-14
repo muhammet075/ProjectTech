@@ -8,7 +8,7 @@
 <div id="card" data-aos="fade-up">
 
     <section>
-        <img src="img/lege-avatar.svg" alt="Geen gekozen profielfoto" class="avatarimg"/>
+        <img src="/uploads/<%= gebruiker.img %>" alt="Geen gekozen profielfoto" class="avatarimg"/>
     </section>
     
     <section>
@@ -16,18 +16,16 @@
     </section>
 
     <section>
-        <h3>Speelt op</h3>
+        <h3>Mijn console</h3>
         <img src="img/console/<%= gebruiker.console %>.svg" alt="Logo van de console" class="consoleimg"/>
     </section>
 
     <section>
-        <h3>Contact</h3>
-        <p>0<%= gebruiker.telefoon %></p>
-        <p><%= gebruiker.mail %></p>
+        <div><span><i class="fab fa-whatsapp-square"></i></span> 0<%= gebruiker.telefoon %></div>
     </section>
 
     <section>
-        <h3>Games</h3>
+        <h3>Games wat ik speel</h3>
         <span>
             <img src="img/game/<%= gebruiker.game1 %>.svg" alt="Logo van de game" class="gameimg"/>
             <img src="img/game/<%= gebruiker.game2 %>.svg" alt="Logo van de game" class="gameimg"/>
