@@ -16,6 +16,13 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
  </div>
 
 
+## Features 🖇
+* Aanmelden gegevens 
+* Opslaan gegevens
+* Updaten/wijzigen gegevens
+* Verwijderen gegevens
+* Filteren
+
 
 ## Installeren
 1. Clone de repository<br/>
