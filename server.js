@@ -158,15 +158,25 @@ app.get('/zoeken', (req, res) => {
 
 // nog in ontwikkeling
 app.post('/zoeken', async (req, res) => {
+
   const consoleFilter = req.body.consolefilter
   let query = {}
+
   if (consoleFilter === 'Alle') {
+    query = {}
   } else {
-    query = {
-       console: req.body.consoleFilter
+      query = {
+      console: consoleFilter
     }
-    console.log(consoleFilter);
   }
+
+  const gebruikers = await gebruiker.find(query).lean()
+
+  res.render('zoeken', {
+    gebruikersLijst: gebruikers,
+    consoleFilter
+  })
+
 })
 
 
