@@ -48,7 +48,7 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 5. Maak een database aan bij MongoAtlas met een tabel genaamd gebruiker<br/>
 (https://www.mongodb.com/cloud/atlas)
 
-6. Verander de MONGO_URI en de MONGODB_NAME<br/>
+6. Verander de MONGO_URI en de MONGODB_NAME in de .env bestand<br/>
 ```
   MONGO_URI=<jouw database link>
   MONGODB_NAME=<jouw database name>
