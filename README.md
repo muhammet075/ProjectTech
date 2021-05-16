@@ -31,7 +31,7 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 ```MONGO_URI=<jouw database link>```<br/>
 ``` MONGODB_NAME=<jouw database name>```
 
-7. Start de app<br/>
+7. Start de app 🚀<br/>
 ```npm start```
 
 
