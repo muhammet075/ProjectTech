@@ -9,8 +9,6 @@
     --grijs: #232323;
     --lichtgrijs: #d3d3d3;
     --geel: #fdae37;
-    --lichtgeel: #f7c67c;
-    --rood: #ff7b7b;
 }
 
 a{
@@ -37,6 +35,7 @@ body{
     background-color: #dcdcdc;
 }
 
+/* APP MAX 600 PX, MOBIEL FORMAAT */
 #app{
     max-width: 600px;
     margin: auto;
@@ -179,14 +178,17 @@ footer section a{
     padding: 10px 90px;
     border-radius: 25px;
     border: 0px;
-    margin-top: 50px;
     background-color: var(--geel);
     font-size: 1em;
     letter-spacing: 2px;
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 /* EINDE REGISTREREN */
+
+/* BEGIN CARD */
 .card{
     background-color: var(--wit);
     width: 90%;
@@ -207,15 +209,12 @@ footer section a{
 }
 
 .card:nth-child(even) div:first-child{
-    background-color: var(--lichtgeel);
+    background-color: #95e8b1;
 }
 
 .card:nth-child(odd) div:first-child{
-    background-color: var(--rood);
+    background-color: #c0c0c0;
 }
-
-
-
 
 .card div:first-child section:first-child span{
     display: grid;
@@ -276,7 +275,7 @@ footer section a{
 }
 
 .card div:last-child section:last-child img{
-    width: 75px;
+    width: 20%;
     height: auto;
     border-radius: 5px;
 }
@@ -287,8 +286,30 @@ footer section a{
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 500px) {
+    .card div:first-child section:first-child span h2, .card div:first-child section:first-child span p{
+        font-size: 0.8em;
+    }
+
+    .card div:first-child section:nth-child(3) p{
+        font-size: 0.8em;
+    }
+
+    .card div:first-child img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .card div:last-child section:first-child img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+/* EINDE CARD */
 
 
+/* BEGIN ZOEKEN */
 #zoeken-menu{
     color: var(--geel);
     font-size: 1.5em;
@@ -305,7 +326,9 @@ footer section a{
 #zoeken-menu span:nth-child(2){
     margin-right: 15px;
 }
+/* EINDE ZOEKEN */
 
+/* BEGIN FILTEREN */
 #terug{
     margin-top: 20px;
     margin-right: 50px;
@@ -348,7 +371,9 @@ footer section a{
 #verwijderknop{
     margin-bottom: 350px !important;
 }
+/* EINDE FILTEREN */
 
+/* BEGIN NOTFOUND */
 .notfound{
     margin-top: 150px;
     margin-bottom: 100px;
@@ -363,7 +388,9 @@ footer section a{
     font-size: 2em;
     margin-bottom: 310px;
 }
+/* EINDE NOTFOUND */
 
+/* BEGIN HOEWERKTHET */
 .hoewerkhet p{
     margin: 0 auto;
 }
@@ -399,3 +426,4 @@ footer section a{
     margin-right: 10px;
     cursor: pointer;
 }
+/* EINDE HOEWERKTHET */

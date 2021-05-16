@@ -1,7 +1,7 @@
 <div id="zoeken-menu">
     <span id="verwijderen"><a href="/verwijderen"><i class="fas fa-trash"></i></a></span>
     <span id="instellingen"><a href="/wijzigen"><i class="fas fa-cog"></i></a></span>
-    <span id="filter"><i class="fas fa-filter"></i> Filter</span>
+    <span id="filter"><i class="fas fa-filter"></i></span>
 </div>
 
 <%gebruikersLijst.forEach(gebruiker => {%>
@@ -61,11 +61,11 @@
             <label for="consolefilter">Console</label>
                 <select name="consolefilter" id="consolefilter">
                     <option value="Alle">Alle</option>
-                    <option value="PC">PC</option>
-                    <option value="PlayStation 4">PlayStation 4</option>
-                    <option value="PlayStation 5">PlayStation 5</option>
-                    <option value="Xbox One">Xbox One</option>
-                    <option value="Xbox Series X">Xbox Series X</option>
+                    <option value="pc">PC</option>
+                    <option value="ps4">PlayStation 4</option>
+                    <option value="ps5">PlayStation 5</option>
+                    <option value="xboxone">Xbox One</option>
+                    <option value="xboxseriesx">Xbox Series X</option>
                 </select>
             <input type="submit" value="Filteren">
         </form>

@@ -11,7 +11,7 @@ app.use('/img', express.static(__dirname + 'public.img'));
 app.use('/js', express.static(__dirname + 'public.js'));
 
 app.use(expressLayouts);
-app.set('layout', './layouts/full-width')
+app.set('layout', './layouts/mobiel-formaat')
 app.set("view engine", "ejs");
 
 var bodyParser = require('body-parser');
