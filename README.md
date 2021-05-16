@@ -23,6 +23,9 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 * Verwijderen gegevens
 * Filteren
 
+## Wiki
+Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
+
 
 ## Installeren
 1. Clone de repository<br/>
@@ -55,9 +58,6 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 ```
   npm start
 ```
-
-## Wiki
-Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
 
 ## Autheur
 De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
