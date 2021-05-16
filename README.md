@@ -14,7 +14,10 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 
 ## Installeren
 1. Clone de repository<br/>
-```git clone https://github.com/muhammet075/ProjectTech.git```
+```
+  git clone https://github.com/muhammet075/ProjectTech.git
+  
+```
 
 2. Navigeer naar het project<br/>
 ```cd ProjectTech```
