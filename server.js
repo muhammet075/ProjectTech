@@ -4,7 +4,7 @@ require("dotenv").config();
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const app = express();
-const port = 5000;
+const port = process.env.PORT ||  5000;
 
 //de css, img en js map in de public map gebruiken
 app.use(express.static("public"));
