@@ -11,7 +11,23 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 
 
 ## Installeren
-* Clone de repository 
-* ```git clone https://github.com/muhammet075/ProjectTech.git```
+1. Clone de repository 
+```git clone https://github.com/muhammet075/ProjectTech.git```
 
+2. Navigeer naar het project
+```cd ProjectTech```
+
+3. Installeer NPM
+```npm install```
+
+4. Verander de naam van het bestand .env-example naar .env
+
+5. Maak een database aan bij MongoAtlas met een tabel genaamd gebruiker
+
+6. Verander de MONGO_URI en de MONGODB_NAME
+```MONGO_URI=<jouw database link>
+   MONGODB_NAME=<jouw database name>
+```
+7. Start de app
+```npm start```
 
