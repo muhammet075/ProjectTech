@@ -23,6 +23,7 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 4. Verander de naam van het bestand .env-example naar .env<br/>
 
 5. Maak een database aan bij MongoAtlas met een tabel genaamd gebruiker<br/>
+(https://www.mongodb.com/cloud/atlas)
 
 6. Verander de MONGO_URI en de MONGODB_NAME<br/>
 ```MONGO_URI=<jouw database link>```<br/>
