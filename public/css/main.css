@@ -11,6 +11,12 @@
     --geel: #fdae37;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 a{
     color: var(--geel);
 }
