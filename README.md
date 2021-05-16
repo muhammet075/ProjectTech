@@ -46,7 +46,8 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
   npm start
 ```
 
-
+## Autheur
+De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a>
 
 
 ## License
