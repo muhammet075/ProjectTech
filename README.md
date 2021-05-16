@@ -12,6 +12,6 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 
 ## Installeren
 * Clone de repository 
-* ```
-git clone https://github.com/muhammet075/ProjectTech.git
+* ```git clone https://github.com/muhammet075/ProjectTech.git
+
 ```
