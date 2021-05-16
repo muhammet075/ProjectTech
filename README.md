@@ -8,8 +8,8 @@ Game Buddy is een app waarbij mensen die de zelfde games spelen met elkaar in co
 Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die hij/zij speelt. Als de gebruiker iemand vindt die ook de zelfde games speelt dan kan de gebruiker met die persoon contact opnemen.
 
 <div style="display:flex;">
-<img width="200" alt="Schermafbeelding 2021-05-16 om 16 59 44" src="https://user-images.githubusercontent.com/34505894/118402637-0e251800-b66b-11eb-83c4-8327fb203e81.png">
-<img width="200" alt="Schermafbeelding 2021-05-16 om 16 59 58" src="https://user-images.githubusercontent.com/34505894/118402639-0f564500-b66b-11eb-9bce-5ac99c4379b1.png">
+<img width="230" alt="Schermafbeelding 2021-05-16 om 16 59 44" src="https://user-images.githubusercontent.com/34505894/118402637-0e251800-b66b-11eb-83c4-8327fb203e81.png">
+<img width="250" alt="Schermafbeelding 2021-05-16 om 16 59 58" src="https://user-images.githubusercontent.com/34505894/118402639-0f564500-b66b-11eb-9bce-5ac99c4379b1.png">
  </div>
 
 
