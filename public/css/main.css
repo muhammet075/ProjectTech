@@ -276,7 +276,6 @@ footer section a{
 }
 
 .card div:last-child section:last-child{
-    display: flex;
     margin-bottom: 15px;
 }
 
