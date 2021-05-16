@@ -192,6 +192,7 @@ footer section a{
 .card{
     background-color: var(--wit);
     width: 90%;
+    max-height: 215px;
     border-radius: 5px;
     margin-top: 70px;
     box-shadow: 5px 10px 18px #777;
