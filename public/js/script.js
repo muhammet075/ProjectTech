@@ -1,4 +1,4 @@
-console.log("Hellowwd");
+console.log("Helloww");
 
 //AOS
 AOS.init({
