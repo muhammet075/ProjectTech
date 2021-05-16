@@ -10,6 +10,8 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 <img width="475" alt="Schermafbeelding 2021-05-08 om 04 12 28" src="https://user-images.githubusercontent.com/34505894/117522436-abb98100-afb3-11eb-9aa3-f952b2ab07bb.png">
 
 
+
+
 ## Installeren
 1. Clone de repository<br/>
 ```git clone https://github.com/muhammet075/ProjectTech.git```
@@ -32,3 +34,8 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 7. Start de app<br/>
 ```npm start```
 
+
+
+
+## License
+Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license.
