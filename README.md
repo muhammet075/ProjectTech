@@ -25,9 +25,9 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 5. Maak een database aan bij MongoAtlas met een tabel genaamd gebruiker
 
 6. Verander de MONGO_URI en de MONGODB_NAME
-```MONGO_URI=<jouw database link>
-   MONGODB_NAME=<jouw database name>
-```
+```MONGO_URI=<jouw database link>```
+``` MONGODB_NAME=<jouw database name>```
+
 7. Start de app
 ```npm start```
 
