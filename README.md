@@ -47,11 +47,11 @@ Als een gebruiker op de dasboard is, kan de gebruiker filteren op de games die h
 ```
 
 ## Wiki
-Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app.
+Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
 
 ## Autheur
-De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a>
+De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
 
 
 ## License
-Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license.
+Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license. ✅
