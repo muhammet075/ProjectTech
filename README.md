@@ -11,7 +11,8 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 
 
 ## Schermen / Features
-![wireflow1](https://user-images.githubusercontent.com/34505894/118870886-4f296080-b8e7-11eb-99d8-e62fed8670c7.png) <br/>
+![wireflow1](https://user-images.githubusercontent.com/34505894/118870886-4f296080-b8e7-11eb-99d8-e62fed8670c7.png) <br/><br/>
+
 ![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)
 
 
