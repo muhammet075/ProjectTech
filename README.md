@@ -59,6 +59,12 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
   npm start
 ```
 
+## Dependencies
+* Express
+* Mongoose
+* EJS
+
+
 ## Autheur
 De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
 
