@@ -71,3 +71,8 @@ De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kö
 
 ## License
 Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license ✅
+
+## Schermen
+![Uploading wireflow1.png…]()
+![Uploading wireflow2.png…]()
+
