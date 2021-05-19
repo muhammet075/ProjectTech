@@ -10,13 +10,13 @@ Game Buddy is een app waarbij mensen die de zelfde games spelen met elkaar in co
 Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een formulier in en vult zijn naam, leeftijd, email, telefoonnummer, console, een bio, een profielfoto en favoriete 4 games die de gebruiker speelt. Dan klikt de gebruiker op aanmelden en wordt zijn gegevens in een card verwerkt en komt het terecht in de dashboard van de app. Hier kunnen andere gebruikers van de app zijn oproep zien en kunnen andere gebruikers in contact komen.
 
 
-<div style="display:flex;">
-<img width="230" alt="Schermafbeelding 2021-05-16 om 16 59 44" src="https://user-images.githubusercontent.com/34505894/118402637-0e251800-b66b-11eb-83c4-8327fb203e81.png">
-<img width="250" alt="Schermafbeelding 2021-05-16 om 16 59 58" src="https://user-images.githubusercontent.com/34505894/118402639-0f564500-b66b-11eb-9bce-5ac99c4379b1.png">
- </div>
+## Schermen / Features
+![wireflow1](https://user-images.githubusercontent.com/34505894/118870886-4f296080-b8e7-11eb-99d8-e62fed8670c7.png) <br/>
+![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)
 
 
-## Features 🖇
+
+## Features list 🖇
 * Aanmelden gegevens 
 * Opslaan gegevens
 * Updaten/wijzigen gegevens
@@ -71,9 +71,4 @@ De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kö
 
 ## License
 Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license ✅
-
-## Schermen / Features
-![wireflow1](https://user-images.githubusercontent.com/34505894/118870886-4f296080-b8e7-11eb-99d8-e62fed8670c7.png) <br/>
-![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)
-
 
