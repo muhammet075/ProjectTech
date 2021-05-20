@@ -15,7 +15,7 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 
 ![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)<br/>
 
-
+<br/>
 
 ## Features list 🖇
 * Aanmelden gegevens 
@@ -25,8 +25,9 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 * Filteren<br/>
 
 ## Wiki
-Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖<br/>
+Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
 
+<br/>
 
 ## Installeren
 1. Clone de repository<br/>
@@ -49,7 +50,7 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 5. Maak een database aan bij MongoAtlas met een tabel genaamd gebruiker<br/>
 (https://www.mongodb.com/cloud/atlas)
 
-6. Verander de MONGO_URI en de MONGODB_NAME in de .env bestand<br/>
+6. Verander de MONGO_URI en de MONGODB_NAME in de .env bestand.<br/>
 ```
   MONGO_URI=<jouw database link>
   MONGODB_NAME=<jouw database name>
@@ -73,6 +74,7 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 
 ## Autheur
 De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
+
 <br/>
 
 ## License
