@@ -4,16 +4,16 @@
 # Game Buddy 🎮
 
 ## Over Game Buddy
-Game Buddy is een app waarbij mensen die de zelfde games spelen met elkaar in contact kunnen komen. De gebruiker plaatst een oproep via een formulier en vult zijn gegevens in. De gebruiker vult 4 games in die hij/zij speelt. Daarna komt de oproep van de gebruiker in de dashboard van de app terecht, waarbij andere mensen dat kunnen zien. Als iemand de oproep ziet en de zelfde games speelt, kan de gebruiker op de nummer klikken die op de oproep staan en zo kunnen de gebruikers met elkaar in contact komen en samen gamen.
+Game Buddy is een app waarbij mensen die de zelfde games spelen met elkaar in contact kunnen komen. De gebruiker plaatst een oproep via een formulier en vult zijn gegevens in. De gebruiker vult 4 games in die hij/zij speelt. Daarna komt de oproep van de gebruiker in de dashboard van de app terecht, waarbij andere mensen dat kunnen zien. Als iemand de oproep ziet en de zelfde games speelt, kan de gebruiker op de nummer klikken die op de oproep staan en zo kunnen de gebruikers met elkaar in contact komen en samen gamen.<br/>
 
 ## Hoe werkt het
-Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een formulier in en vult zijn naam, leeftijd, email, telefoonnummer, console, een bio, een profielfoto en favoriete 4 games die de gebruiker speelt. Dan klikt de gebruiker op aanmelden en wordt zijn gegevens in een card verwerkt en komt het terecht in de dashboard van de app. Hier kunnen andere gebruikers van de app zijn oproep zien en kunnen andere gebruikers in contact komen.
+Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een formulier in en vult zijn naam, leeftijd, email, telefoonnummer, console, een bio, een profielfoto en favoriete 4 games die de gebruiker speelt. Dan klikt de gebruiker op aanmelden en wordt zijn gegevens in een card verwerkt en komt het terecht in de dashboard van de app. Hier kunnen andere gebruikers van de app zijn oproep zien en kunnen andere gebruikers in contact komen.<br/>
 
 
 ## Schermen / Features
 ![wireflow1](https://user-images.githubusercontent.com/34505894/118870886-4f296080-b8e7-11eb-99d8-e62fed8670c7.png) <br/><br/>
 
-![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)
+![wireflow2](https://user-images.githubusercontent.com/34505894/118870903-518bba80-b8e7-11eb-8d71-b73fe1b03000.png)<br/>
 
 
 
@@ -22,10 +22,10 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 * Opslaan gegevens
 * Updaten/wijzigen gegevens
 * Verwijderen gegevens
-* Filteren
+* Filteren<br/>
 
 ## Wiki
-Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
+Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖<br/>
 
 
 ## Installeren
@@ -59,6 +59,7 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 ```
   npm start
 ```
+<br/>
 
 ## Dependencies
 * Express
@@ -68,10 +69,11 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 * Dotenv
 * Bodyparser
 * Multer
+<br/>
 
 ## Autheur
 De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
-
+<br/>
 
 ## License
 Dit project heeft een <a href="https://github.com/muhammet075/ProjectTech/blob/master/LICENSE">MIT</a> license ✅
