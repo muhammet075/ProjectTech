@@ -72,6 +72,9 @@ Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor 
 * Dotenv
 * Bodyparser
 * Multer
+* AOS.JS
+* Font-Awesome
+* Google Fonts
 <br/>
 
 ## Autheur
