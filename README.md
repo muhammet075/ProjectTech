@@ -22,7 +22,9 @@ Een gebruiker klikt op de knop 'plaats oproep'. Vervolgens vult de gebruiker een
 * Opslaan gegevens
 * Updaten/wijzigen gegevens
 * Verwijderen gegevens
-* Filteren<br/>
+* Filteren
+ 
+<br/>
 
 ## Wiki
 Lees de <a href="https://github.com/muhammet075/ProjectTech/wiki">wiki</a> voor meer informatie over de app 📖
