@@ -1,16 +1,55 @@
-<div class="home">
+<article>
+  <section class="cryptoLijst">
+    <%for (let i = 0; i < nieuweCrypto.length; i++) {%>
+    <ul>
+      <li><%= nieuweCrypto[i].base_asset %></li>
+      <li><%= nieuweCrypto[i].price %></li>
+    </ul>
+    <%}%>
+  </section>
 
-    <img src="img/logo.svg" alt="Logo van Game Buddy" data-aos="fade-right"/> 
+  <section class="cryptoGrafiek">
+    <svg width="1000" height="1240">
+      <g id="wrapper" transform="translate(40, 20)"></g>
+    </svg>
+  </section>
+</article>
 
-    <h1>Vind nieuwe game vrienden!</h1>
+<script>
 
-    <a id="uitleglink" href="/hoe-werkt-het">Hoe werkt het?</a>
 
-    <section>
-        <a href="/zoeken"><span><i class="fas fa-gamepad"></i></span> Ik zoek game maatjes</a>
-        <a href="/aanmelden"><span><i class="fas fa-user-plus"></i></span> Plaats oproep</a>
-    </section>
+      let data = [
+          <%for (let i = 0; i < nieuweCrypto.length; i++) {%>
+      {
+        Naam: "<%=  nieuweCrypto[i].base_asset %>",
+        Waarde: <%=  nieuweCrypto[i].price %>
+      },
+         <%}%>
+    ]
 
-    <p>Als je je aanmeldt, dan ga je akkoord met onze <a href="#">algemene voorwaarden</a>.</p>
+        console.log(data)
 
-</div>
+
+  var bandScale = d3.scaleBand()
+  	.domain([
+       <%for (let i = 0; i < nieuweCrypto.length; i++) {%>
+      '<%=  nieuweCrypto[i].base_asset %>',
+      <%}%>
+
+    ]
+    )
+  	.range([0, 900])
+  	.paddingInner(0.8);
+
+  d3.select('#wrapper')
+  	.selectAll('rect')
+  	.data(data)
+  	.join('rect')
+  	.attr('y', function(d) {
+  		return bandScale(d.Naam);
+  	})
+  	.attr('height', bandScale.bandwidth())
+  	.attr('width', function(d) {
+  		return d.Waarde;
+  	});
+</script>
